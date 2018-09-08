@@ -1,0 +1,142 @@
+
+	span{
+		display: none;
+	}
+
+	#tab{
+		/*width: 400px;*/
+		background: #1caa5d;
+		border: solid 1px #1caa5d;
+	}
+	/* 頁籤ul */
+	#tab>ul{
+		overflow: hidden;
+		margin: 0;
+    padding: 10px 20px 0 20px;
+	}
+	#tab>ul>li{
+		list-style-type: none;
+
+	}
+	#tab>ul>li>a{
+		text-decoration: none;
+		font-size: 13px;
+		color: #333;
+		float: left;
+		padding: 10px;
+		margin-left: 5px;
+	}
+
+	/*頁籤div內容*/
+	#tab>div {
+	  clear:both;
+	  padding:0 15px;
+	  height:0;
+	  overflow:hidden;
+	  visibility:hidden;
+	  -webkit-transition:all .4s ease-in-out;
+	  -moz-transition:all .4s ease-in-out;
+	  -ms-transition:all .4s ease-in-out;
+	  -o-transition:all .4s ease-in-out;
+	  transition:all .4s ease-in-out;
+	}
+
+	/* span:target */
+	#tab-1:target,
+	#tab-2:target,
+	#tab-3:target,
+	#tab-4:target{
+	  border: solid 1px red;
+	}
+	
+	/*第一筆的底色*/
+	span:target ~ #tab > ul li:first-child a {
+		 background:#1caa5d;
+	}
+	span:target ~ #tab > div:first-of-type {
+		visibility:hidden;
+	  height:0;
+	  padding:0 15px;
+	}
+	
+	/*頁籤變換&第一筆*/
+	span ~ #tab > ul li:first-child a,
+	#tab-1:target ~ #tab > ul li a[href$="#tab-1"],
+	#tab-2:target ~ #tab > ul li a[href$="#tab-2"],
+	#tab-3:target ~ #tab > ul li a[href$="#tab-3"],
+	#tab-4:target ~ #tab > ul li a[href$="#tab-4"] {
+	  background: #fff;
+	}
+
+	/*頁籤內容顯示&第一筆*/
+	span ~ #tab > div:first-of-type,
+	#tab-1:target ~ #tab > div.tab-content-1,
+	#tab-2:target ~ #tab > div.tab-content-2,
+	#tab-3:target ~ #tab > div.tab-content-3,
+	#tab-4:target ~ #tab > div.tab-content-4 {
+		visibility:visible;
+	  height:800px;
+	  background: #fff;
+	}    
+
+ /* 建議維修零件表 id=j00_prod_fix  產品編號和查詢鈕合併成一行 css 設定*/
+/*	* {
+	    box-sizing: border-box;
+	}*/
+
+	#s1_prod_no {
+	    padding: 10px;
+	    float: left;
+	    width: 80%;
+	}
+
+	#s1_prod_no_btn {
+	    float: left;
+	    width: 20%;
+	    padding: 10px;
+	    background: #2196F3;
+	    color: white;
+	    font-size: 17px;
+	    border: 1px solid grey;
+	    border-left: none;
+	    cursor: pointer;
+	}
+
+	#s1_prod_no_btn:hover {
+	    background: #0b7dda;
+	}
+
+/* 建議維修零件表 查詢產品編號 form_get_data 設定*/
+/*.form_get_data.form-horizontal {
+    transition: .5s;
+}*/
+
+.searchBtn {
+    position: absolute;
+    bottom: 60px;
+    left: 100px;
+}
+
+.addIcon {
+    padding: 0 6px 4px;
+    position: absolute;
+    right: 200px;
+    top: 14px;
+    border: 2px solid #D0D0D0;
+    border-radius: 100%;
+    color: #DDD;
+    cursor: pointer;
+    font-size: 30px;
+    line-height: 30px;
+    transition: .5s ease-in-out;
+    -webkit-user-select: none; /* Chrome, Opera, Safari */
+       -moz-user-select: none; /* Firefox 2+ */
+        -ms-user-select: none; /* IE 10+ */
+            user-select: none; /* Standard syntax */ }
+.addIcon:hover {
+    background: #666;
+}	
+
+.table-kyc tbody tr:hover td {
+    background: #FFBB73;
+}

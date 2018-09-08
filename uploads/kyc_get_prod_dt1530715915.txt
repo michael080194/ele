@@ -1,0 +1,1 @@
+and (c_unit LIKE '%條%' )and (sale_price LIKE '%7%' )

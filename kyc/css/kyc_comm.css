@@ -1,0 +1,108 @@
+
+
+* {
+  font-family: "微軟正黑體";
+}
+
+nav {
+  font-size: 1.2em;
+  box-sizing: border-box;
+}
+
+.nav > li {
+  margin: 0 1px;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #ADADAD; }
+.navbar-inverse .navbar-nav > li > a {
+  color: #BDBDBD;
+  border-bottom: 3px solid #333; }
+.navbar-inverse .navbar-nav > li > a:hover {
+  border-bottom: 3px solid #FFFF00;
+}
+
+.nav .open > a,
+.nav .open > a:focus {
+  border-bottom: 3px solid #FFFF00;
+}
+
+.dropdown-menu {
+  padding: 0; }
+  .dropdown-menu > li {
+    border-left: 4px solid #FFF; }
+  .dropdown-menu > li:hover {
+    border-left: 4px solid #959595;
+    color: #000; }
+    .dropdown-menu > li > a {
+      color: #888;
+      font-size: 1.1em;
+}
+
+.selectbox {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.indexText {
+  background: rgba(0, 0, 0, 0);
+  box-shadow: none;
+}
+
+.form-control {
+  padding: 8px;
+  font-size: 1.3em; }
+  .form-control:focus {
+    border: 1px solid #ccc;
+    box-shadow: none;
+}
+
+.searchArea {
+  margin-bottom: 20px;
+}
+
+/* setting for loading image */
+.loading {
+  display: none;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .7);
+  z-index: 9;
+}
+
+.kyc-margin-top-sp20 {
+  margin-top: 20px;
+}
+
+/*搜尋畫面(產品檔 客戶檔...)  + - 按鈕設定*/
+.conditionBtn{
+  display: inline-block;
+  background: rgba(255, 255, 255, .65)
+  border-radius: 10%;
+}
+
+.conditionBtn:hover span {
+  background: rgba(0, 0, 0, .2);
+  cursor: pointer;
+}
+
+.conditionBtn span {
+  display: inline-block;
+  padding: 3px 0 0 4px;
+  border: 2px solid black;
+  border-radius: 10%;
+  color: #f00;
+  transition: 0.3s;
+  user-select: none;
+}
+
+.searchID input, .searchID select {
+  background: rgba(255, 255, 255, .65);
+  border: 1px solid #000;
+}
+

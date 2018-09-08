@@ -1,0 +1,8 @@
+ and (prod_no     LIKE '%1%'
+                    or   description LIKE '%1%'
+                    or   c_unit      LIKE '%1%'     
+                    or   in_price    LIKE '%1%'
+                    or   sale_price  LIKE '%1%'     
+                    or   c_brand     LIKE '%1%'
+                    or   c_type      LIKE '%1%'                                                     
+    )and (c_unit LIKE '%支%' )
