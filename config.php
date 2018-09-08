@@ -1,6 +1,6 @@
 <?php
-$admin_user = 'michael';
-$admin_pass = '520729';
+$admin_user = 'mi??';
+$admin_pass = '52??';
 define("_EVERY_PAGE", 10);
 define("_EVERY_TOOLBAR", 20);
 if ($_SERVER["SERVER_NAME"] == "localhost") {
